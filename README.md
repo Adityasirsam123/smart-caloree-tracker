@@ -1,4 +1,4 @@
-# Calorie Calculator Website by adi 🖩
+# Calorie Calculator Website by aditya 🖩
 
 
 
