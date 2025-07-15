@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "calori-chart.fullname" . }}-test-connection"
+  labels:
+    {{- include "calori-chart.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "calori-chart.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

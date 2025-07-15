@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calori-deployment
+  labels:
+    app: calori
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: calori
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: calori-deployment
+        image: aadityasirsam/caloree-tracker
+        ports:
+        - containerPort: 8000
+
