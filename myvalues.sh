@@ -8,4 +8,3 @@ DOCKER_JSON=$(jq -nc --arg u "$USERNAME" --arg p "$PASSWORD" --arg e "$EMAIL" --
 
 echo "$DOCKER_JSON" | base64 -w 0
 
-ubuntu@ip-172-31-34-211:~/smart-caloree-tracker$
