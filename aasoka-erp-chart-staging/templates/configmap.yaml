@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aasoka-erp-config
+  namespace: staging
+data:
+  DB_DRIVER: "mysql"
+  DB_ADDRESS: "13.200.56.66"
+  DB_PORT: "3306"
+  DB_NAME: "erp_12_2_2022"
+  DB_USER: "aasoka_staging"
+
