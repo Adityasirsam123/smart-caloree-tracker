@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Secret
-metadata:
-  name: gitlab-regcred
-  namespace: staging
-type: kubernetes.io/dockerconfigjson
-data:
-  .dockerconfigjson: ewogICJhdXRocyI6IHsKICAgICJyZWdpc3RyeS5naXRsYWIuY29tIjogewogICAgICAiYXV0aCI6ICJRV1JwZEhsaGMybHljMkZ0T21kc2NHRjBMV2R4WTBwdk56RllkMTg1T1ZGelptSjJZa1EyIgogICAgfQogIH0KfQo=
